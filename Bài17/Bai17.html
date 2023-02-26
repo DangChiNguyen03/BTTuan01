@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập</title>
+    <style>
+        .wrapper{
+            width: 620px;
+            height: 750px;
+            background-color: #ffd47c;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #button1{
+            margin-left: 170px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 align="center">Survey Form</h2>
+        <p>If you are interested in purchasing one or more of our product, before ordering please complete<br>
+            some or all of the following survey for our marketing department. Answering any question is<br>
+            optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
+        <form>
+            <ol>
+                <li>
+                    <label for="name">What is your name?</label> <br>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    What is your date of birth? <br>
+                    Month: <select>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                    </select>
+                    Date: <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    Year: <select>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                    </select>
+                </li>
+                <li>
+                    What is your mailing address(if you would like to have a hard copy of our catalog sent to <br>
+                    you)? <br>
+                    <textarea cols="50" rows="4">
+Number/P.O. Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:
+                    </textarea>
+                </li>
+                <li>
+                    <label for="email">What is your email address?</label> <br>
+                    <input type="text" id="email">
+                </li>
+                <li>
+                    Have you viewed our online product catalog? <br>
+                    <input type="radio" name="checked" checked="checked">Yes
+                    <input type="radio" name="checked" >No
+                </li>
+                <li>
+                    If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.) <br>
+                    <input type="checkbox"> VCR <br>
+                    <input type="checkbox"> Big Screen TV <br>
+                    <input type="checkbox"> Audio Equipment <br>
+                    <input type="checkbox"> Video Equipment <br>
+                    <input type="checkbox"> Camera Equipment <br>
+                    <input type="checkbox" checked="checkbox"> Other <input type="text" value="Please List:">
+                </li>
+                <li>
+                    Do you have any questions, comments or suggestions before proceeding to the Order Form? <br>
+                    <textarea cols="40" rows="5">Your Input:</textarea>
+                </li> <br>
+                <button type="submit" id="button1">Send Form</button> <button type="reset">Clear Form</button>
+            </ol>
+        </form>
+    </div>
+</body>
+</html>
